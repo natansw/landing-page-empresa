@@ -5,17 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design Responsivo</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-        <header>
-         <h1>Design Responsivo</h1>
-          <nav>
-            <button>Abrir / fechar menu</button>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre nós</a> </li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li> <a href="contato.html">Contato</a></li>
+        <header class="cabecalho">
+         <h1 class="logo">Design Responsivo</h1>
+          <nav class="menu-principal">
+            <button class="menu-principal__btn">Abrir/fechar menu</button>
+            <ul class="menu-principal__lista">
+                <li><a class="menu-principal__item menu-principal__item--atual" href="index.html">Home</a></li>
+                <li><a class="menu-principal__item" href="sobre.html">Sobre nós</a> </li>
+                <li><a class="menu-principal__item" href="portfolio.html">Portfolio</a></li>
+                <li> <a class="menu-principal__item" href="contato.html">Contato</a></li>
             </ul>
           </nav>
         </header>
@@ -52,10 +54,10 @@
                 </section>
             </section> <!-- fim seção depoimentos -->
         </main>
-        <footer>
-            <div>
+        <footer class="rodape">
+            <div class="rodape__linha-1">
                 <div>
-                    <a href="index.html">Design Responsivo</a>
+                    <a href="index.html" class="logo logo--branco">Design Responsivo</a>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cum dignissimos voluptates dolorum animi nemo obcaecati soluta at praesentium. Rerum vero atque ducimus! Deleniti voluptas pariatur corrupti reiciendis provident saepe.</p>
                 </div>
                 <div>
@@ -77,7 +79,7 @@
                     </ul>
                 </div>
             </div>
-            <div>
+            <div class="rodape__linha-2">
                 2017 - todos os direitos reservados - Eduardo Garcia
             </div>
         </footer>
