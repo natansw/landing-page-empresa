@@ -2,6 +2,10 @@
    
    box-sizing: border-box;
 }
+.img{
+    max-width: 100px;
+    height: auto;
+}
 @font-face{
     font-family: "Source Sans Pro";
     src: url('../fonts/source-sans-pro/SourceSansPro-Regular.otf');
