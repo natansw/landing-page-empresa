@@ -1,11 +1,11 @@
 .servicos{
     padding: 30px 0;
-}
-.servicos__item{
-    text-align: center;
-    padding: 0 15px;
-    margin-bottom: 50px;
-}
-.servicos__texto{
-    color: $cor-leitura;
+    .&__item{
+        text-align: center;
+        padding: 0 15px;
+        margin-bottom: 50px;
+    }
+    .&__texto{
+        color: $cor-leitura;
+    }
 }
