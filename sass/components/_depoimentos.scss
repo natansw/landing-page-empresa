@@ -4,20 +4,20 @@
     background-attachment: fixed;
     color: #fff;
     padding: 30px 0;
-    .&__item{
+    &__item{
         
     }
-    .&__img{
+    &__img{
         margin: 0 auto;
         display: block;
         box-shadow: 3px 3px 0 #000;
         margin-bottom: 30px;
     }
-    .&__texto{
+    &__texto{
         line-height: 24px;
         margin-bottom: 30px;
     }
-    .&__texto::before{
+    &__texto::before{
         background: url('../img/aspas.png') no-repeat;
         content: '';
         display: inline-block;
@@ -25,7 +25,7 @@
         height: 23px;
         margin-right: 5px;
     }
-    .&__pessoa{
+    &__pessoa{
         text-align: center;
         font-weight: bold;
         font-style: italic;

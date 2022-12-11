@@ -15,15 +15,15 @@
     position: absolute;
     top: 15px;
     right: 15px;
-    .&__btn--fechar{
+    &__btn--fechar{
         background-position: -48px 7px;
     }
     
-    .&__lista{
+    &__lista{
         padding: 0;
         list-style: none;
     }
-    .&__item{
+    &__item{
         text-decoration: none;
         font-weight: bold;
         color: #343434;
@@ -31,7 +31,7 @@
         display: block;
         font-size: 18px;
     }
-    .&__item--atual{
+    &__item--atual{
       color: $cor-principal;
     }
 }

@@ -5,11 +5,11 @@
     color: #fff;
     padding-top: 40px;
     padding-bottom: 40px;
-    .&__titulo{
+    &__titulo{
         text-align: center;
         text-transform: uppercase;
     }
-    .&__titulo::after{
+    &__titulo::after{
         content: '';
         display: block;
         width: 50px;

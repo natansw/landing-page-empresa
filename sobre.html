@@ -9,23 +9,25 @@
 </head>
 <body>
     <header class="cabecalho">
-        <a href="index.html" class="logo">Design Responsivo</a>
-        <nav class="menu-principal">
-          <button class="menu-principal__btn">Abrir/fechar menu</button>
-          <ul class="menu-principal__lista">
-              <li><a class="menu-principal__item" href="index.html">Home</a></li>
-              <li><a class="menu-principal__item menu-principal__item--atual" href="sobre.html">Sobre nós</a> </li>
-              <li><a class="menu-principal__item" href="portfolio.html">Portfolio</a></li>
-              <li> <a class="menu-principal__item" href="contato.html">Contato</a></li>
-          </ul>
-        </nav>
+        <div class="container">
+            <a href="index.html" class="logo">Design Responsivo</a>
+            <nav class="menu-principal">
+              <button class="menu-principal__btn">Abrir/fechar menu</button>
+              <ul class="menu-principal__lista">
+                  <li><a class="menu-principal__item" href="index.html">Home</a></li>
+                  <li><a class="menu-principal__item menu-principal__item--atual" href="sobre.html">Sobre nós</a> </li>
+                  <li><a class="menu-principal__item" href="portfolio.html">Portfolio</a></li>
+                  <li> <a class="menu-principal__item" href="contato.html">Contato</a></li>
+              </ul>
+            </nav>
+        </div> <!-- fim container -->
       </header>
         <main>
             <article>
                 <header class="pagina-cabecalho">
                     <h1 class="pagina-cabecalho__titulo">Sobre nós</h1>
                 </header>
-                <section class="pagina-conteudo">
+                <section class="container pagina-conteudo">
                   <p class="text-center">Aliquam erat volutpat. Vivamus cursus pulvinar turpis</p>
                   <img  src="img/time-unido.jpg" alt="Mesa de escritório com vários colegas de trabalho se cumprimentando">
                   <p>Integer vulputate wulputate nulla, nec malesuada nibh imperdiet ut. Nulla vulputate pellentesque nisi, at mattis purus. Nam est elit, aliquet lacinia sceferisque a, viverra sed dolor. Etiam interdum dolor sit amet dolor lobortis, ac blandit libero euismod. Phasellus aliquet lectus magna.</p>
@@ -36,28 +38,30 @@
         </main>
         <footer class="rodape">
             <div class="rodape__linha-1">
-                <div class="rodape__coluna">
-                    <a href="index.html" class="logo logo--branco">Design Responsivo</a>
-                    <p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Facilis totam accusantium<br> ab vero. Beatae sit nulla tempora<br> asperiores, inventore excepturi non modi<br> blanditiis laudantium deserunt neque<br> doloremque dolorum mollitia. Dolor!</p>
+                <div class="container">
+                       <div class="rodape__coluna">
+                        <a href="index.html" class="logo logo--branco">Design Responsivo</a>
+                        <p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Facilis totam accusantium<br> ab vero. Beatae sit nulla tempora<br> asperiores, inventore excepturi non modi<br> blanditiis laudantium deserunt neque<br> doloremque dolorum mollitia. Dolor!</p>
+                    </div>
+                    <div class="rodape__coluna">
+                        <h2 class="rodape__titulo">Social</h2>
+                        <ul class="rodape__lista-links">
+                            <li> <a class="rodape__lista-links__items" href="https://twitter.com/eduardogharcia" target="_blank">Twitter</a></li>
+                            <li> <a class="rodape__lista-links__items" href="https://facebook.com" target="_blank">Facebook</a></li>
+                            <li> <a class="rodape__lista-links__items" href="https://instagram.com" target="_blank">Instagram</a></li>
+                            <li> <a class="rodape__lista-links__items" href="https://youtube.com" target="_blank">Youtube</a></li>
+                        </ul>
+                    </div>
+                    <div class="rodape__coluna">
+                        <h2 class="rodape__titulo">Links</h2>
+                        <ul class="rodape__lista-links">
+                            <li><a class="rodape__lista-links__items" href="index.html">Home</a></li>
+                            <li><a class="rodape__lista-links__items" href="sobre.html">Sobre nós</a></li>
+                            <li><a class="rodape__lista-links__items" href="portfolio.html">Portfolio</a></li>
+                            <li><a class="rodape__lista-links__items" href="contato.html">Contato</a> </li>
+                        </ul>
                 </div>
-                <div class="rodape__coluna">
-                    <h2 class="rodape__titulo">Social</h2>
-                    <ul class="rodape__lista-links">
-                        <li> <a class="rodape__lista-links__items" href="https://twitter.com/eduardogharcia" target="_blank">Twitter</a></li>
-                        <li> <a class="rodape__lista-links__items" href="https://facebook.com" target="_blank">Facebook</a></li>
-                        <li> <a class="rodape__lista-links__items" href="https://instagram.com" target="_blank">Instagram</a></li>
-                        <li> <a class="rodape__lista-links__items" href="https://youtube.com" target="_blank">Youtube</a></li>
-                    </ul>
-                </div>
-                <div class="rodape__coluna">
-                    <h2 class="rodape__titulo">Links</h2>
-                    <ul class="rodape__lista-links">
-                        <li><a class="rodape__lista-links__items" href="index.html">Home</a></li>
-                        <li><a class="rodape__lista-links__items" href="sobre.html">Sobre nós</a></li>
-                        <li><a class="rodape__lista-links__items" href="portfolio.html">Portfolio</a></li>
-                        <li><a class="rodape__lista-links__items" href="contato.html">Contato</a> </li>
-                    </ul>
-                </div>
+                </div> <!--fim container -->
             </div>
             <div class="rodape__linha-2">
                 © 2017 - todos os direitos reservados - Eduardo Garcia

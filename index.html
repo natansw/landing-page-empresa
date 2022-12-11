@@ -9,16 +9,18 @@
 </head>
 <body>
         <header class="cabecalho">
-         <h1 class="logo">Design Responsivo</h1>
-          <nav class="menu-principal">
-            <button class="menu-principal__btn">Abrir/fechar menu</button>
-            <ul class="menu-principal__lista">
-                <li><a class="menu-principal__item menu-principal__item--atual" href="index.html">Home</a></li>
-                <li><a class="menu-principal__item" href="sobre.html">Sobre nós</a> </li>
-                <li><a class="menu-principal__item" href="portfolio.html">Portfolio</a></li>
-                <li> <a class="menu-principal__item" href="contato.html">Contato</a></li>
-            </ul>
-          </nav>
+            <div class="container">
+                 <h1 class="logo">Design Responsivo</h1>
+                 <nav class="menu-principal">
+                   <button class="menu-principal__btn">Abrir/fechar menu</button>
+                   <ul class="menu-principal__lista">
+                       <li><a class="menu-principal__item menu-principal__item--atual" href="index.html">Home</a></li>
+                       <li><a class="menu-principal__item" href="sobre.html">Sobre nós</a> </li>
+                       <li><a class="menu-principal__item" href="portfolio.html">Portfolio</a></li>
+                       <li> <a class="menu-principal__item" href="contato.html">Contato</a></li>
+                   </ul>
+                 </nav>
+            </div> <!-- fim container -->
         </header>
         <main>
             <header class="cabecalho-home">
@@ -27,56 +29,62 @@
                 <a class="cabecalho-home__role" href="#servicos">role para ver mais</a>
             </header>
             <section id="servicos" class="servicos"><!-- Seção serviços -->
-                <h2 class="home__titulo">O que fazemos</h2>
-                <section class="servicos__item">
-                    <img src="img/icone-desenvolvimento-web.png" alt="Ícone planeta terra">
-                    <h3>Desenvolvimento web</h3>
-                    <p class="servicos__texto">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. <br> Phasellus interdum ex a nunc <br> fermentum congue. Aliquam <br> dignissim pulvinar arcu. Interdum <br>et malesuada fames ac ante ipsum <br> primis in faucibus.</p>
-                </section>
-                <section class="servicos__item">
-                    <img src="img/icone-carrinho-compras.png" alt="Ícone carrinho de compras">
-                    <h3>E-commerce</h3>
-                    <p class="servicos__texto">In hac habitasse platea dictumst. <br> Proin ut pellentesque mauris. <br> Nunc in varius justo. Phasellus <br> vulputate ut neque non auctor. <br> Fusce vitae urna egestas, finibus <br> ante non, laoreet nunc.</p>
-                </section>
-                <section class="servicos__item">
-                    <img src="img/icone-cafe.png" alt="ícone xícara de café">
-                    <h3>Café</h3>
-                    <p class="servicos__texto">Aliquam ac lorem sapien. Nullam <br> suscipit purus vel erat aliquam <br> scelerisque. Aenean sed turpis a <br> nibh laoreet iaculis a et nulla. <br> Aenean at felis ex. Nulla ut dui <br> aliquet, fermentum massa vitae, <br> accumsan erat.</p>
-                </section>
+                <div class="container">
+                    <h2 class="home__titulo">O que fazemos</h2>
+                    <section class="servicos__item">
+                        <img src="img/icone-desenvolvimento-web.png" alt="Ícone planeta terra">
+                        <h3>Desenvolvimento web</h3>
+                        <p class="servicos__texto">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. <br> Phasellus interdum ex a nunc <br> fermentum congue. Aliquam <br> dignissim pulvinar arcu. Interdum <br>et malesuada fames ac ante ipsum <br> primis in faucibus.</p>
+                    </section>
+                    <section class="servicos__item">
+                        <img src="img/icone-carrinho-compras.png" alt="Ícone carrinho de compras">
+                        <h3>E-commerce</h3>
+                        <p class="servicos__texto">In hac habitasse platea dictumst. <br> Proin ut pellentesque mauris. <br> Nunc in varius justo. Phasellus <br> vulputate ut neque non auctor. <br> Fusce vitae urna egestas, finibus <br> ante non, laoreet nunc.</p>
+                    </section>
+                    <section class="servicos__item">
+                        <img src="img/icone-cafe.png" alt="ícone xícara de café">
+                        <h3>Café</h3>
+                        <p class="servicos__texto">Aliquam ac lorem sapien. Nullam <br> suscipit purus vel erat aliquam <br> scelerisque. Aenean sed turpis a <br> nibh laoreet iaculis a et nulla. <br> Aenean at felis ex. Nulla ut dui <br> aliquet, fermentum massa vitae, <br> accumsan erat.</p>
+                    </section>
+                </div> <!-- fim container -->
             </section><!-- fim Seção serviços -->
             <section class="depoimentos"> <!-- seção depoimentos -->
-                <h2 class="home__titulo home__titulo--branco">O que falam de nós</h2>
-                <section class="depoimentos__item">
-                    <img class="depoimentos__img" src="img/depoimentos/pessoa-1.jpg" alt="Foto da pessoa x">
-                    <p class="depoimentos__texto">Phasellus dapibus sapien et est blandit,<br> ornare interdum arcu iaculis.<br> Vestibulum placerat ex sit amet erat <br> mattis bibendum. Mauris non mi<br>  augue.</p>
-                    <p class="depoimentos__pessoa">Nome da pessoa - Cargo</p>
-                </section>
+                <div class="container">
+                   <h2 class="home__titulo home__titulo--branco">O que falam de nós</h2>
+                    <section class="depoimentos__item">
+                        <img class="depoimentos__img" src="img/depoimentos/pessoa-1.jpg" alt="Foto da pessoa x">
+                        <p class="depoimentos__texto">hasellus dapibus sapien et est blandit, ornare interdum arcu iaculis. Vestibulum placerat ex sit amet erat  mattis bibendum. Mauris non mi  augue.</p>
+                        <p class="depoimentos__pessoa">Nome da pessoa - Cargo</p>
+                    </section>
+                </div>
             </section> <!-- fim seção depoimentos -->
         </main>
         <footer class="rodape">
             <div class="rodape__linha-1">
-                <div class="rodape__coluna">
-                    <a href="index.html" class="logo logo--branco">Design Responsivo</a>
-                    <p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Facilis tptam accusantium<br> ab vero. Beatae sit nulla tempora<br> asperiores, inventore excepturi non modi<br> blanditiis laundantium deserunt neque<br> doloremque mollitia. Dolor!</p>
-                </div>
-                <div class="rodape__coluna">
-                    <h2 class="rodape__titulo">Social</h2>
-                    <ul class="rodape__lista-links">
-                        <li> <a class="rodape__lista-links__items" href="https://twitter.com/eduardogharcia" target="_blank">Twitter</a></li>
-                        <li> <a class="rodape__lista-links__items" href="https://facebook.com" target="_blank">Facebook</a></li>
-                        <li> <a class="rodape__lista-links__items" href="https://instagram.com" target="_blank">Instagram</a></li>
-                        <li> <a class="rodape__lista-links__items" href="https://youtube.com" target="_blank">Youtube</a></li>
-                    </ul>
-                </div>
-                <div class="rodape__coluna">
-                    <h2 class="rodape__titulo">Links</h2>
-                    <ul class="rodape__lista-links">
-                        <li><a class="rodape__lista-links__items" href="index.html">Home</a></li>
-                        <li><a class="rodape__lista-links__items" href="sobre.html">Sobre nós</a></li>
-                        <li><a class="rodape__lista-links__items" href="portfolio.html">Portfolio</a></li>
-                        <li><a class="rodape__lista-links__items" href="contato.html">Contato</a> </li>
-                    </ul>
-                </div>
+                <div class="container">
+                    <div class="rodape__coluna">
+                        <a href="index.html" class="logo logo--branco">Design Responsivo</a>
+                        <p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Facilis tptam accusantium<br> ab vero. Beatae sit nulla tempora<br> asperiores, inventore excepturi non modi<br> blanditiis laundantium deserunt neque<br> doloremque mollitia. Dolor!</p>
+                    </div>
+                    <div class="rodape__coluna">
+                        <h2 class="rodape__titulo">Social</h2>
+                        <ul class="rodape__lista-links">
+                            <li> <a class="rodape__lista-links__items" href="https://twitter.com/eduardogharcia" target="_blank">Twitter</a></li>
+                            <li> <a class="rodape__lista-links__items" href="https://facebook.com" target="_blank">Facebook</a></li>
+                            <li> <a class="rodape__lista-links__items" href="https://instagram.com" target="_blank">Instagram</a></li>
+                            <li> <a class="rodape__lista-links__items" href="https://youtube.com" target="_blank">Youtube</a></li>
+                        </ul>
+                    </div>
+                    <div class="rodape__coluna">
+                        <h2 class="rodape__titulo">Links</h2>
+                        <ul class="rodape__lista-links">
+                            <li><a class="rodape__lista-links__items" href="index.html">Home</a></li>
+                            <li><a class="rodape__lista-links__items" href="sobre.html">Sobre nós</a></li>
+                            <li><a class="rodape__lista-links__items" href="portfolio.html">Portfolio</a></li>
+                            <li><a class="rodape__lista-links__items" href="contato.html">Contato</a> </li>
+                        </ul>
+                    </div>
+                </div> <!-- fim container -->
             </div>
             <div class="rodape__linha-2">
                 © 2017 - todos os direitos reservados - Eduardo Garcia

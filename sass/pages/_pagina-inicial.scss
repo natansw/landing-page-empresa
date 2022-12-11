@@ -4,6 +4,9 @@
     color: #fff;
     text-align: center;
     padding: 50px 0;
+    @media(min-widht: $breakpoint-lg){
+        height: 100vh;
+    }
 }
 .cabecalho-home__titulo{
     font-size: 40px;
@@ -30,3 +33,20 @@
 .home__titulo--branco::after{
     background-color: #fff;
 }
+.menu-principal__btn--fechar {
+    background-position: -48px 7px; }
+  
+  .menu-principal__lista {
+    padding: 0;
+    list-style: none; }
+  
+  .menu-principal__item {
+    text-decoration: none;
+    font-weight: bold;
+    color: #343434;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 18px; }
+  
+  .menu-principal__item--atual {
+    color: #f44242; }

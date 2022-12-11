@@ -4,19 +4,19 @@
     margin-right: -15px;
     padding: 40px 15px 40px 15px;
     box-shadow:  0 3px 5px #989898;
-    .&__grupo{
+    &__grupo{
         margin-bottom: 15px;
     }
-    .&__campo{
+    &__campo{
         width: 100%;
         border: 1px solid #c4c4c4;
         border-radius: 5px;
         padding: 10px 5px;
     }
-    .&__label{
+    &__label{
         color: #343434;
     }
-    .&__botao{
+    &__botao{
         border: 3px solid $cor-principal;
         border-radius: 300px;
         background-color: #fff;
