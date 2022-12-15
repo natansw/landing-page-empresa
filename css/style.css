@@ -350,6 +350,17 @@ body {
   padding: 15px 0;
   position: fixed;
   width: 100%; }
+  @media (min-width: 768px) {
+    .cabecalho {
+      min-height: 100px; }
+      .cabecalho .logo {
+        float: left;
+        margin-top: 8.5px; }
+      .cabecalho .menu-principal {
+        float: right;
+        margin-top: 12px; }
+        .cabecalho .menu-principal__lista {
+          margin-bottom: 0; } }
 
 .rodape {
   color: #fff; }
@@ -481,7 +492,7 @@ body {
   background-color: #fff;
   background-image: url("../img/menuprincipal-btn-bg.png");
   background-repeat: no-repeat;
-  background-position: 5px 5px;
+  background-position: -48px 7px;
   border-color: #c4c4c4;
   border-style: solid;
   border-radius: 5px;
@@ -492,9 +503,6 @@ body {
   @media (min-width: 768px) {
     .menu-principal__btn {
       display: none; } }
-
-.menu-principal__btn--fechar {
-  background-position: -48px 7px; }
 
 .menu-principal__lista {
   padding: 0;
@@ -515,12 +523,22 @@ body {
 .menu-principal__item--atual {
   color: #f44242; }
 
+@media (max-width: 767px) {
+  .menu-principal--fechado .menu-principal__btn {
+    background-position: 5px 5px; }
+  .menu-principal--fechado .menu-principal__lista {
+    margin: 0; }
+  .menu-principal--fechado .menu-principal__item {
+    margin: 0;
+    height: 0;
+    overflow: hidden; } }
+
 .pagina-cabecalho {
   background-color: #f44242;
   background-image: url("../img/cabecalho-pagina-bg.jpg");
   background-attachment: fixed;
   color: #fff;
-  padding-top: 40px;
+  padding-top: 140px;
   padding-bottom: 40px; }
   .pagina-cabecalho__titulo {
     text-align: center;
@@ -563,7 +581,8 @@ body {
   background-size: cover;
   color: #fff;
   text-align: center;
-  padding: 50px 0; }
+  padding: 50px 0;
+  padding-top: 150px; }
   @media (min-width: 992px) {
     .cabecalho-home {
       height: 100vh; } }
