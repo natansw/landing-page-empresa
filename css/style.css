@@ -506,7 +506,8 @@ body {
 
 .menu-principal__lista {
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  transition: margin 200ms ease-out; }
   @media (min-width: 768px) {
     .menu-principal__lista li {
       display: inline-block;
@@ -518,7 +519,9 @@ body {
   color: #343434;
   margin-bottom: 10px;
   display: block;
-  font-size: 18px; }
+  font-size: 18px;
+  height: 20px;
+  transition: all 200ms ease-out; }
 
 .menu-principal__item--atual {
   color: #f44242; }
@@ -583,16 +586,34 @@ body {
   text-align: center;
   padding: 50px 0;
   padding-top: 150px; }
+  .cabecalho-home__titulo {
+    font-size: 40px;
+    margin-bottom: 0; }
+  .cabecalho-home__role {
+    display: none; }
+  @media (min-width: 768px) {
+    .cabecalho-home {
+      background-image: url("../img/cabecalho-home-bg-md.jpg"); } }
   @media (min-width: 992px) {
     .cabecalho-home {
-      height: 100vh; } }
-
-.cabecalho-home__titulo {
-  font-size: 40px;
-  margin-bottom: 0; }
-
-.cabecalho-home__role {
-  display: none; }
+      height: 100vh; }
+      .cabecalho-home__role {
+        display: block;
+        position: absolute;
+        background: url("../img/icone-mouse.png") no-repeat center right;
+        color: #fff;
+        bottom: 10px;
+        left: 50%;
+        height: 50px;
+        width: 190px;
+        text-align: left;
+        font-size: 20px;
+        text-decoration: none;
+        line-height: 45px;
+        margin-left: -95px; } }
+  @media (min-width: 1200px) {
+    .cabecalho-home {
+      background-image: url("../img/cabecalho-home-bg-xl.jpg"); } }
 
 .home__titulo {
   text-align: center;
