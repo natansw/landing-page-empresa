@@ -364,47 +364,58 @@ body {
 
 .rodape {
   color: #fff; }
+  .rodape .logo {
+    margin-bottom: 20px; }
+  .rodape__linha-1 {
+    background-color: #272525;
+    background-image: url("../img/rodape-bg.jpg");
+    background-size: cover;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    overflow: auto; }
+  .rodape__linha-2 {
+    background-color: #000;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  .rodape__coluna {
+    margin-top: 40px;
+    margin-bottom: 40px; }
+  .rodape__titulo {
+    border-bottom: 1px solid #fff;
+    padding: 0px 10px 10px 10px;
+    font-size: 18px; }
+  .rodape__lista-links {
+    padding: 0;
+    list-style: none; }
+  .rodape__lista-links__items {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block; }
+  .rodape__lista-links__items::before {
+    content: '>';
+    margin-right: 8px;
+    color: #f44242; }
+  @media (min-width: 768px) {
+    .rodape__linha-1 {
+      background-image: url("../img/rodape-bg-md.jpg"); }
+    .rodape__coluna {
+      float: left;
+      width: 33.333%;
+      padding: 0 15px; } }
+  @media (min-width: 768px) {
+    .rodape__linha-1 {
+      background-image: url("../img/rodape-bg-xl.jpg"); } }
 
-.rodape .logo {
-  margin-bottom: 20px; }
+.img-left {
+  float: left; }
 
-.rodape__linha-1 {
-  background-color: #272525;
-  background-image: url("../img/rodape-bg.jpg");
-  background-size: cover;
-  padding: 15px; }
-
-.rodape__linha-2 {
-  background-color: #000;
-  text-align: center;
-  padding: 15px; }
-
-.rodape__coluna {
-  margin-top: 40px;
-  margin-bottom: 40px; }
-
-.rodape__titulo {
-  border-bottom: 1px solid #fff;
-  padding: 0px 10px 10px 10px;
-  font-size: 18px; }
-
-.rodape__lista-links {
-  padding: 0;
-  list-style: none; }
-
-.rodape__lista-links__items {
-  color: #fff;
-  text-decoration: none;
-  margin-bottom: 10px;
-  display: block; }
-
-.rodape__lista-links__items::before {
-  content: '>';
-  margin-right: 8px;
-  color: #f44242; }
-
-.text-center {
-  text-align: center; }
+@media (min-width: 768px) {
+  .img-left-md {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px; } }
 
 .depoimentos {
   background-color: #f44242;
@@ -412,6 +423,9 @@ body {
   background-attachment: fixed;
   color: #fff;
   padding: 30px 0; }
+  .depoimentos__item {
+    max-width: 750px;
+    margin: 0 auto; }
   .depoimentos__img {
     margin: 0 auto;
     display: block;
@@ -431,6 +445,14 @@ body {
     text-align: center;
     font-weight: bold;
     font-style: italic; }
+  @media (min-width: 768px) {
+    .depoimentos {
+      padding: 150px 0; }
+      .depoimentos__img {
+        float: left;
+        margin-right: 15px; }
+      .depoimentos__pessoa {
+        text-align: left; } }
 
 .formulario {
   background-color: #efecec;
@@ -558,20 +580,25 @@ body {
 .pagina-conteudo {
   padding: 15px;
   padding-top: 25px;
-  padding-bottom: 25px; }
-  .pagina-conteudo .pagina-conteudo p {
+  padding-bottom: 25px;
+  overflow: auto; }
+  .pagina-conteudo p {
     color: #3a3a3a;
     line-height: 22px;
     margin-top: 20px;
     margin-bottom: 20px; }
+  @media (min-width: 768px) {
+    .pagina-conteudo {
+      padding-top: 100px;
+      padding-bottom: 100px; } }
 
 .servicos {
   padding: 30px 0;
   overflow: auto; }
   .servicos__item {
     text-align: center;
-    padding: 0 15px;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    padding: 0 15px; }
     @media (min-width: 768px) {
       .servicos__item {
         float: left;
@@ -597,6 +624,11 @@ body {
   @media (min-width: 992px) {
     .cabecalho-home {
       height: 100vh; }
+      .cabecalho-home__titulo {
+        font-size: 60px;
+        margin-top: 250px; }
+      .cabecalho-home__subtitulo {
+        font-size: 22px; }
       .cabecalho-home__role {
         display: block;
         position: absolute;
@@ -668,3 +700,8 @@ body {
   margin-left: 15px;
   border-left: 1px solid #000;
   padding-left: 16px; }
+
+@media (min-width: 768px) {
+  .pagina-sobre .pagina-conteudo {
+    padding-right: 150px;
+    padding-left: 150px; } }

@@ -44,7 +44,7 @@
     &__item--atual{
       color: $cor-principal;
     }
-    @media(max-width:$breakpoint-md - 1px){
+    @media(max-width:($breakpoint-md - 1)){
          &--fechado{
            .menu-principal__btn{
             background-position: 5px 5px;

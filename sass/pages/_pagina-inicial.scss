@@ -17,6 +17,13 @@
     }
     @media(min-width: $breakpoint-lg){
         height: 100vh;
+        &__titulo{
+            font-size: 60px;
+            margin-top: 250px;
+        }
+        &__subtitulo{
+            font-size: 22px;
+        }
         &__role{
             display: block;
             position: absolute;
