@@ -3,6 +3,7 @@
     padding: 15px 0;
     position: fixed;
     width: 100%;
+    z-index: 99;
     @media(min-width:$breakpoint-md){
         min-height: 100px;
        .logo{

@@ -349,7 +349,8 @@ body {
   background: #fff;
   padding: 15px 0;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  z-index: 99; }
   @media (min-width: 768px) {
     .cabecalho {
       min-height: 100px; }
@@ -459,6 +460,7 @@ body {
   margin-left: -15px;
   margin-right: -15px;
   padding: 40px 15px 40px 15px;
+  margin: 80px 0;
   box-shadow: 0 3px 5px #989898; }
   .formulario__grupo {
     margin-bottom: 15px; }
@@ -479,6 +481,21 @@ body {
     display: block;
     margin: 0 auto;
     font-weight: bold; }
+  @media (min-width: 768px) {
+    .formulario {
+      padding-bottom: 0; }
+      .formulario__grupo {
+        float: left;
+        width: 100%; }
+      .formulario__grupo--coluna-esq {
+        width: 50%;
+        padding-right: 15px; }
+      .formulario__grupo--coluna-dir {
+        width: 50%;
+        padding-left: 15px; }
+      .formulario__botao {
+        font-size: 20px;
+        transform: translateY(-37px); } }
 
 .logo {
   background-image: url("../img/logotipo-preto.png");
@@ -493,18 +510,26 @@ body {
 
 .mapa {
   background-color: #f44242;
+  height: 0;
   padding-bottom: 100px;
   position: relative;
   overflow: hidden;
-  margin: 0 auto;
-  width: 100%;
-  height: 300px; }
+  margin: 0 -15px -25px -15px; }
   .mapa iframe {
     width: 100% !important;
     height: 300px !important;
     position: absolute;
     top: 0;
     left: 0; }
+  @media (min-width: 450px) {
+    .mapa {
+      padding-bottom: 60%; } }
+  @media (min-width: 768px) {
+    .mapa {
+      padding-bottom: 40%; } }
+  @media (min-width: 992px) {
+    .mapa {
+      padding-bottom: 25%; } }
 
 .menu-principal__btn {
   display: block;
@@ -606,6 +631,11 @@ body {
   .servicos__texto {
     color: #3a3a3a; }
 
+@media (min-width: 768px) {
+  .pagina-contato .pagina-conteudo {
+    padding-right: 150px;
+    padding-left: 150px; } }
+
 .cabecalho-home {
   background: url("../img/cabecalho-home-bg.jpg") #000 no-repeat;
   background-size: cover;
@@ -685,21 +715,51 @@ body {
 .lista-trabalhos {
   list-style: none;
   padding: 0; }
-
-.lista-trabalhos__item {
-  margin-left: -15px;
-  margin-right: -15px;
-  margin-bottom: 50px; }
-
-.lista-trabalhos__item a {
-  text-decoration: none; }
-
-.lista-trabalhos__titulo {
-  color: #000;
-  font-size: 18px;
-  margin-left: 15px;
-  border-left: 1px solid #000;
-  padding-left: 16px; }
+  .lista-trabalhos__item {
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 50px;
+    position: relative; }
+  .lista-trabalhos__a {
+    text-decoration: none; }
+  .lista-trabalhos__img {
+    width: 100%;
+    height: auto; }
+  .lista-trabalhos__titulo {
+    color: #000;
+    font-size: 18px;
+    margin-left: 15px;
+    border-left: 1px solid #000;
+    padding-left: 10px; }
+  @media (min-width: 768px) {
+    .lista-trabalhos__item {
+      margin: 0;
+      float: left;
+      width: 50%;
+      background-color: #f44242; }
+      .lista-trabalhos__item:hover .lista-trabalhos__img {
+        opacity: 0.1; }
+      .lista-trabalhos__item:hover .lista-trabalhos__titulo {
+        opacity: 1; }
+    .lista-trabalhos__img {
+      opacity: 1; }
+    .lista-trabalhos__titulo {
+      color: #fff;
+      padding: 0;
+      margin: 0;
+      border: none;
+      text-align: center;
+      position: absolute;
+      top: 40%;
+      left: 0;
+      width: 100%;
+      background: url("../img/icone-olho.png") no-repeat bottom center;
+      padding-bottom: 35px;
+      font-size: 22px;
+      opacity: 0; } }
+  @media (min-width: 992px) {
+    .lista-trabalhos__item {
+      width: 33.333%; } }
 
 @media (min-width: 768px) {
   .pagina-sobre .pagina-conteudo {
