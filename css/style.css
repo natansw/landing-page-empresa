@@ -772,3 +772,7 @@ body {
   .pagina-sobre .pagina-conteudo {
     padding-right: 150px;
     padding-left: 150px; } }
+
+.text-center{
+      text-align: center;
+    }
