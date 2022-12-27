@@ -502,7 +502,7 @@ body {
   background-image: url("../img/logotipo-preto.png");
   background-repeat: no-repeat;
   display: block;
-  width: 12opx;
+  width: 12px;
   height: 53px;
   text-indent: -9999px;
   margin: 0; }
@@ -657,7 +657,7 @@ body {
       height: 100vh; }
       .cabecalho-home__titulo {
         font-size: 60px;
-        margin-top: 250px; }
+        margin-top: 170px; }
       .cabecalho-home__subtitulo {
         font-size: 22px; }
       .cabecalho-home__role {
@@ -772,7 +772,3 @@ body {
   .pagina-sobre .pagina-conteudo {
     padding-right: 150px;
     padding-left: 150px; } }
-
-.text-center{
-      text-align: center;
-    }
