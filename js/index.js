@@ -1,8 +1,8 @@
-let idade = 8;
+let botao = document.querySelector('.menu-principal__btn');
+let menuPrincipal = document.querySelector('.menu-principal');
 
-if(idade == 10){
-   console.log("idade é igual a 10");
-}
-else{
-    console.log("nao passou na condição");
+botao.addEventListener("click", abreFechaMenu);
+
+function abreFechaMenu(evento){
+    menuPrincipal.classList.toggle('.menu-principal--fechado');
 }
