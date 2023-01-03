@@ -28,6 +28,12 @@
         margin: 0 auto;
         font-weight: bold;
     }
+    label.error{
+        border-left: 4px solid $cor-principal;
+        padding-left: 4px;
+        color: $cor-principal;
+        margin-left: 3px;
+    }
     @media(min-width: $breakpoint-md){
         padding-bottom: 0;
         &__grupo{
