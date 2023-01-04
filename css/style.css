@@ -978,3 +978,10 @@ body {
     .slick-dots li.slick-active button:before {
       color: black;
       opacity: 0.75; }
+     
+    label.error{
+        border-left: 4px solid #f44242;
+        padding-left: 4px;
+        color: #f44242;
+        margin-left: 3px;
+    }
