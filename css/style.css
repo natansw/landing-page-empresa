@@ -985,3 +985,10 @@ body {
         color: #f44242;
         margin-left: 3px;
     }
+    .formulario__erro{
+      background: #f00;
+      color: #fff;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+  }

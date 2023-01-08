@@ -17,8 +17,12 @@
 <body>
         <header class="cabecalho">
             <div class="container">
-                 <h1 class="logo">Design Responsivo</h1>
-                 <nav class="menu-principal menu-principal--fechado">
+                <?php if($tituloPagina == ''): ?>
+                   <h1 class="logo">Design Responsivo</h1>
+                <?php else: ?>
+                    <a href="index.php" class="logo">Design Responsivo</a>
+                <?php endif; ?>
+                <nav class="menu-principal menu-principal--fechado">
                    <button class="menu-principal__btn">Abrir/fechar menu</button>
                    <ul class="menu-principal__lista">
                        <li><a class="menu-principal__item <?php echo $tituloPagina == '' ? 'menu-principal__item--atual' : '' ?>" href="index.php">Home</a></li>

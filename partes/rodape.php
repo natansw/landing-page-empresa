@@ -27,11 +27,13 @@
                 </div> <!-- fim container -->
             </div>
             <div class="rodape__linha-2">
-                © 2017 - todos os direitos reservados - Eduardo Garcia
+                © <?php echo date('Y') ?> - todos os direitos reservados - Eduardo Garcia
             </div>
         </footer>
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/slick.min.js"></script>
+        
+        <script src="js/jquery.fancybox.min.js"></script>
         <script src="js/index.js"></script>
 </body>
 </html>
