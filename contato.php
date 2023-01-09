@@ -7,6 +7,7 @@
     $email = '';
     $mensagem = '';
     $erroFormulario = '';
+    $sucessoFormulario = '';
     if(isset ($_POST['submit']) ){
         $nome = $_POST['nome'];
         $email = $_POST['email'];
@@ -17,8 +18,17 @@
             && $mensagem != '')
         {
             // usuário preencheu corretamente
-
-
+            $mensagemEmail = 'Nome: ' . $nome . ' - ';
+            $mensagemEmail .= 'Email: ' . $nome . ' - ';
+            $mensagemEmail .= 'Mensagem: ' . $nome;
+            if(email('contato@site.com.br', 'Mensagem de contato', $mensagemEmail)){
+                // email enviado
+                $sucessoFormulario = 'Mensagem enviada com sucesso!';
+            }
+            else{
+                // email não enviado
+                $erroFormulario = "Falha ao enviar a mensagem, tente mais tarde ou através do e-mail xxx@xxx.com";
+            }
         }
         else{
             // usuário não preencheu todos os campos
@@ -35,6 +45,11 @@
                     <?php if($erroFormulario != ''): ?>
                         <div class="formulario__erro">
                             <?php echo $erroFormulario ?>
+                        </div>
+                    <?php endif; ?>
+                    <?php if($sucessoFormulario != ''): ?>
+                        <div class="formulario__sucesso">
+                            <?php echo $sucessoFormulario ?>
                         </div>
                     <?php endif; ?>
                     <div class="formulario__grupo formulario__grupo--coluna-esq">

@@ -30,10 +30,11 @@
                 © <?php echo date('Y') ?> - todos os direitos reservados - Eduardo Garcia
             </div>
         </footer>
-        <script src="js/jquery-3.3.1.min.js"></script>
+       <!-- <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/slick.min.js"></script>
-        
+        <script src="js/jquery.validate.min.js"></script>
         <script src="js/jquery.fancybox.min.js"></script>
-        <script src="js/index.js"></script>
+        <script src="js/index.js"></script> !-->
+        <script src="js/app.min.js"></script>
 </body>
 </html>

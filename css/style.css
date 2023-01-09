@@ -992,3 +992,10 @@ body {
       margin-bottom: 20px;
       border-radius: 5px;
   }
+    .formulario__sucesso{
+      background: #00a91e;
+      color: #fff;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+  }
