@@ -13,6 +13,7 @@
     ?>
     <title><?php echo $titulo ?></title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
         <header class="cabecalho">
